@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer survey form </title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #610ab2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        background-color:#fff;
+    }
+    h5 {
+        text-align:left;
+        color: #0d0c0c;
+    }
+
+
+    label {
+       
+       
+        margin-bottom: 10px;
+    }
+
+    input[type="name"],
+    input[type="email"],
+   
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    select {
+        height: 36px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        background-color: #d9534f;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #c9302c;
+    }
+</style>
+</head>
+<body >
+    <div class="container">
+    <form>
+       
+        <h1>Customer survey form</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" >
+        <label for="name">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        <h5>Is this First time you are uesing our products & services?</h5><br>
+        <input type="radio">
+        <label>Yes</label>
+         <input type="radio">
+         <label>No</label><br>
+         <h5>whould you suggistion to you friend and colleague</h5><br>  
+         <input type="radio">
+         <label>Yes</label>
+         <input type="radio">
+         <label>No</label><br>
+          <h5>How satisfied are you with our company overall </h5><br>
+          <input type="radio">
+          <label>satisfied</label>
+          <input type="radio">
+          <label>undecided</label>
+          <input type="radio">
+          <label>Unsatisfied</label><br>
+          <h5> Do have you suggistion to imorove our services?</h5><br>
+          <textarea cols="30" rows="20"></textarea><br>
+          <input type="submit" style="background-color: blue;">
+
+    </form>
+    </div>
+</body>
+</html>
